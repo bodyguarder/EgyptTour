@@ -1,0 +1,53 @@
+.general-page {
+  margin-bottom: 190px;
+  
+  &__container {
+    padding: 15px;
+    position: relative;
+  }
+
+  &__wrapper {
+    position: relative;
+    max-width: 1390px;
+    width: 100%;
+    padding: 290px 0 450px 0;
+    margin: 0 auto;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  &__title {
+    position: absolute;
+    text-align: center;
+    font-size: 110px;
+    line-height: 1;
+  }
+
+  &__layout {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &--layout-1 {
+      display: flex;
+      justify-content: center;
+      padding-top: 130px;
+    }
+
+    &--layout-2 {
+      z-index: 5;
+    }
+  }
+
+  &__inner {
+    z-index: 6;
+    left: 50%;
+    bottom: -35px;
+    transform: translateX(-51%);
+  }
+}

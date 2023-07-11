@@ -18,10 +18,10 @@
       <form class="header__search-form search-form" action="#">
         <button class="search-form__button" type="submit">
           <span class="sr-only">search-form button</span>
-          <span class="search-form__search-icon"></span>
+          <span class="search-form__search-icon" style="background-image: url('images/sprite.svg#search-icon');"></span>
         </button>
 
-        <input class="search-form__input" type="text">
+        <input class="search-form__input" type="text" placeholder="Search">
       </form>
 
       <ul class="header__nav-list">
@@ -46,12 +46,139 @@
         </li>
       </ul>
 
-      <button class="header__button" type="submit">Sign Up</button>
+      <button class="header__button button" type="submit">Sign Up</button>
     </div>
   </header>
 
   <main class="main-content">
+    <section class="guide-selector general-page">
+      <div class="general-page__container">
+        <div class="general-page__inner search-filter">
+          <ul class="search-filter__list">
+            <li class="search-filter__item">
+              <h3 class="search-filter__filter-name">Gender</h3>
+              <div class="search-filter__wrapper custom-select">
+                <div class="custom-select__top">
+                  <span class="custom-select__current">Male</span>
 
+                  <span class="custom-select__icon"
+                    style="background-image: url('images/sprite.svg#chevron-icon');"></span>
+                </div>
+
+                <ul class="custom-select__body">
+                  <li class="custom-select__item">
+                    Male
+                  </li>
+
+                  <li class="custom-select__item">
+                    Shemale
+                  </li>
+
+                  <li class="custom-select__item">
+                    It
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="search-filter__item">
+              <h3 class="search-filter__filter-name">Age</h3>
+              <div class="search-filter__wrapper custom-select">
+                <div class="custom-select__top">
+                  <span class="custom-select__current">24+</span>
+
+                  <span class="custom-select__icon"
+                    style="background-image: url('images/sprite.svg#chevron-icon');"></span>
+                </div>
+
+                <ul class="custom-select__body">
+                  <li class="custom-select__item">
+                    24+
+                  </li>
+
+                  <li class="custom-select__item">
+                    22+
+                  </li>
+
+                  <li class="custom-select__item">
+                    20+
+                  </li>
+
+                  <li class="custom-select__item">
+                    19+
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="search-filter__item">
+              <h3 class="search-filter__filter-name">Language</h3>
+              <div class="search-filter__wrapper custom-select">
+                <div class="custom-select__top">
+                  <span class="custom-select__current">English, Arabic</span>
+
+                  <span class="custom-select__icon"
+                    style="background-image: url('images/sprite.svg#chevron-icon');"></span>
+                </div>
+
+                <ul class="custom-select__body">
+                  <li class="custom-select__item">
+                    English, Arabic
+                  </li>
+
+                  <li class="custom-select__item">
+                    English, Russian
+                  </li>
+
+                  <li class="custom-select__item">
+                    English, Chineese
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="search-filter__item">
+              <h3 class="search-filter__filter-name">Location</h3>
+              <div class="search-filter__wrapper custom-select">
+                <div class="custom-select__top">
+                  <span class="custom-select__current">Cairo</span>
+
+                  <span class="custom-select__icon"
+                    style="background-image: url('images/sprite.svg#chevron-icon');"></span>
+                </div>
+
+                <ul class="custom-select__body">
+                  <li class="custom-select__item">
+                    Cairo
+                  </li>
+
+                  <li class="custom-select__item">
+                    Pyramid
+                  </li>
+
+                  <li class="custom-select__item">
+                    Memphis
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <button class="general-page__button button" type="submit">Search</button>
+        </div>
+
+        <div class="general-page__wrapper">
+          <div class="general-page__layout general-page__layout--layout-1"
+            style="background-image: url('images/sections/guides-section/dune-background__layout-1.png');">
+            <h1 class="general-page__title">Find the Best <br> Egyptian Guide</h1>
+          </div>
+
+          <div class="general-page__layout general-page__layout--layout-2"
+            style="background-image: url('images/sections/guides-section/dune-background__layout-2.png');">
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -113,39 +240,50 @@
 
           <ul class="footer__contact-list">
             <li class="footer__contact-item">
-              <a class="footer__contact-link" href="mailto:infomail@gmail.com">infomail@gmail.com</a>
+              <a class="footer__contact-link" href="mailto:infomail@gmail.com">
+                <span class="footer__contact-icon" style="background-image: url('images/sprite.svg#mail-icon');"></span>
+                infomail@gmail.com
+              </a>
             </li>
 
             <li class="footer__contact-item">
-              <a class="footer__contact-link" href="https://goo.gl/maps/RCKyVfPxgZypPbzM8">48 Street Road, Cairo</a>
+              <a class="footer__contact-link" href="https://goo.gl/maps/RCKyVfPxgZypPbzM8">
+                <span class="footer__contact-icon"
+                  style="background-image: url('images/sprite.svg#location-icon');"></span>
+                48 Street Road, Cairo
+              </a>
             </li>
           </ul>
 
           <ul class="footer__social-list">
             <li class="footer__social-item">
               <a class="footer__social-link" href="#">
-                <span class="footer__social-icon" style="background-image: url('images/sprite.svg#facebook');"></span>
+                <span class="footer__social-icon"
+                  style="background-image: url('images/sprite.svg#facebook-icon');"></span>
                 <span class="sr-only">link to our facebook page</span>
               </a>
             </li>
 
             <li class="footer__social-item">
               <a class="footer__social-link" href="#">
-                <span class="footer__social-icon" style="background-image: url('images/sprite.svg#twitter');"></span>
+                <span class="footer__social-icon"
+                  style="background-image: url('images/sprite.svg#twitter-icon');"></span>
                 <span class="sr-only">link to our twitter page</span>
               </a>
             </li>
 
             <li class="footer__social-item">
               <a class="footer__social-link" href="#">
-                <span class="footer__social-icon" style="background-image: url('images/sprite.svg#instagram');"></span>
+                <span class="footer__social-icon"
+                  style="background-image: url('images/sprite.svg#instagram-icon');"></span>
                 <span class="sr-only">link to our instagram page</span>
               </a>
             </li>
 
             <li class="footer__social-item">
               <a class="footer__social-link" href="#">
-                <span class="footer__social-icon" style="background-image: url('images/sprite.svg#linkedin');"></span>
+                <span class="footer__social-icon"
+                  style="background-image: url('images/sprite.svg#linkedin-icon');"></span>
                 <span class="sr-only">link to our linkedin page</span>
               </a>
             </li>
@@ -153,10 +291,10 @@
         </li>
       </ul>
 
-      <div class="footer__cottom">
-        <span class="footer__copyright">© 2022 EgyptTour</span>
+      <div class="footer__bottom">
+        <span class="footer__copyright">© 2022 <span>EgyptTour</span></span>
 
-        <a class="footer__link" href="#">Privacy Policy</a>
+        <a class="footer__link footer__link--offset" href="#">Privacy Policy</a>
 
         <a class="footer__link" href="#">Term of Condition</a>
       </div>

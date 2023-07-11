@@ -7,3 +7,8 @@
 
 @import 'sections/header'; //хэдер
 @import 'sections/footer'; // футер
+
+@import 'components/search-form'; //форма поиска
+@import 'components/general-page'; //переиспользуемая секция для guide-selector и guide-referenced 
+@import 'components/search-filter'; //фильтр поиска гида
+@import 'components/custom-select'; //выпадающий фильтр

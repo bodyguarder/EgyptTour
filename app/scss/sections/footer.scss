@@ -1,0 +1,143 @@
+.footer {
+  padding: 90px 0 40px 0;
+  background-color: $black-100;
+  color: $white;
+
+  &__list {
+    display: flex;
+    align-items: start;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba($color: $white, $alpha: 0.15);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &:first-child {
+      max-width: 330px;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      max-width: 132px;
+    }
+
+    &:last-child {
+      max-width: 210px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 150px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 30px;
+    color: $white;
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__nav-item {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__text,
+  &__nav-link {
+    font-weight: 600;
+    color: rgba($color: $white, $alpha: 0.8);
+  }
+
+  &__list-title {
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 20px;
+  }
+
+  &__contact-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  &__contact-item {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__contact-link {
+    display: flex;
+    align-items: center;
+    color: $white;
+  }
+
+  &__contact-icon {
+    display: block;
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &__social-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-item {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $orange-100;
+    border-radius: 50%;
+  }
+
+  &__social-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+
+  &__copyright {
+    color: rgba($color: $white, $alpha: 0.8);
+
+    span {
+      color: $orange-100;
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    color: rgba($color: $white, $alpha: 0.8);
+
+    &--offset {
+      margin-left: auto;
+      margin-right: 20px;
+    }
+  }
+}

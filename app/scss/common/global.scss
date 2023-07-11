@@ -8,12 +8,12 @@ body {
   flex-direction: column;
   line-height: 1.5;
   font-size: 16px;
-  font-family: "Poppins",
+  font-family: "Mont",
     sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: normal;
   background-color: $white;
-  color: $black;
+  color: $black-100;
 }
 
 body.hidden {
@@ -38,6 +38,8 @@ body.hidden {
 .logo {
   display: inline-block;
   z-index: 3;
+  font-size: 28px;
+  font-weight: 800;
 }
 
 .sr-only {
@@ -51,5 +53,12 @@ body.hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.button {
+  padding: 20px 30px;
+  background-color: $orange-100;
+  border-radius: 12px;
+  color: $white;
 }
 
